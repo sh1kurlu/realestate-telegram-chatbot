@@ -1,0 +1,47 @@
+{
+  "name": "real-estate-assistant",
+  "version": "1.0.0",
+  "description": "AI-powered real estate assistant for agents via Telegram with voice, CRM (Google Sheets), Calendar, vector memory, and reminders.",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@grammyjs/files": "^1.0.6",
+    "@google-cloud/local-auth": "^2.1.0",
+    "@pinecone-database/pinecone": "^3.0.0",
+    "axios": "^1.7.0",
+    "cron": "^3.1.9",
+    "date-fns": "^4.1.0",
+    "date-fns-tz": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "fs-extra": "^11.2.0",
+    "googleapis": "^144.0.0",
+    "grammy": "^1.30.0",
+    "mime-types": "^2.1.35",
+    "nodemailer": "^6.9.15",
+    "node-cron": "^3.0.3",
+    "openai": "^4.73.0",
+    "uuid": "^9.0.1",
+    "winston": "^3.13.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.2",
+    "@types/node-cron": "^3.0.11",
+    "@types/nodemailer": "^6.4.15",
+    "@types/fs-extra": "^11.0.4",
+    "@types/uuid": "^10.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.2"
+  }
+}
+
+
